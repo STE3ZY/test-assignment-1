@@ -11,7 +11,7 @@ depicts a part of an online ordering menu.
 * User can edit the price (only numbers are allowed)
 
 Given the data and their models:
-https://github.com/ktsangop/test-assignment-1/data.ts
+[https://github.com/ktsangop/test-assignment-1/data.ts](https://github.com/ktsangop/test-assignment-1/blob/main/data.ts)
 
 1. Build a web app with 1 or more components that render the above design using the available data
 2. Any changes made by the user should be saved. For example if I change a price, and refresh the page, the application should keep the updated price.
