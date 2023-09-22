@@ -11,16 +11,16 @@ depicts a part of an online ordering menu.
 * User can edit the price (only numbers are allowed)
 
 Given the data and their models:
-(point ts file)
+https://github.com/ktsangop/test-assignment-1/data.ts
 
-1. Build 1 or more components that render the above design using the available data
+1. Build a web app with 1 or more components that render the above design using the available data
 2. Any changes made by the user should be saved. For example if I change a price, and refresh the page, the application should keep the updated price.
 3. Create a pull request with your changes to this repository when you are ready
 
 ## Notes
 1. You can use bootstrap or any other CSS framework for your implementation
 2. You can use React but you get bonus points if you do this in Angular :)
-3. You can use either Javascript or Typescript
+3. You can use either Javascript or Typescript. You can import or copy the data from `data.ts` file any way you need to.
 4. You can use any of the available browser APIs to save data
 5. The relations between the data use a classic relational approach (id based)
 
