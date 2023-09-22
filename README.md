@@ -19,7 +19,7 @@ Given the data and their models:
 4. Create a pull request with your changes to this repository when you are ready
 
 ## Notes
-1. You can use bootstrap or any other CSS framework for your implementation
+1. You can use bootstrap or any other CSS framework for your implementation. Try to match the design styles as much as possible
 2. You can use React but you get bonus points if you do this in Angular :)
 3. You can use either Javascript or Typescript. You can import or copy the data from `data.ts` file any way you need to.
 4. You can use any of the available browser APIs to save data
