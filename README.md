@@ -13,7 +13,7 @@ depicts a part of an online ordering menu.
 Given the data and their models:
 [https://github.com/ktsangop/test-assignment-1/data.ts](https://github.com/ktsangop/test-assignment-1/blob/main/data.ts)
 
-1. Clone this repository on your account
+1. Fork this repository on your account
 2. Build a web app that matches the above design and functionality described above, using the available data
 3. Create a pull request with your changes to this repository when you are ready
 
