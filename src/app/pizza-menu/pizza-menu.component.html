@@ -1,0 +1,35 @@
+<ngb-accordion>
+  <ngb-panel
+    *ngFor="let item of items; let i = index"
+    [id]="item.itemId.toString()"
+    [ngClass]="{ active: selectedItem === item }"
+  >
+    <ng-template ngbPanelTitle>
+      <span (click)="handleItemClick(item)">{{ item.name }}</span>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <ul class="size-options">
+        <li *ngFor="let size of itemSizes">
+          <label>
+            <input
+              type="checkbox"
+              class="custom-checkbox"
+              [ngModel]="selectedSizes[item.itemId][size.sizeId]"
+              (ngModelChange)="handleSizeChange(item.itemId, size.sizeId)"
+            />
+            <div>{{ size.name }}</div>
+            <div class="price-group">
+              <span>$</span>
+              <input
+                type="number"
+                [value]="getItemSizePrice(item.itemId, size.sizeId)"
+                (input)="handlePriceChange(item.itemId, size.sizeId, $event)"
+                [disabled]="!selectedSizes[item.itemId][size.sizeId]"
+              />
+            </div>
+          </label>
+        </li>
+      </ul>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
