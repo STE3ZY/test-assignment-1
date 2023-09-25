@@ -19,11 +19,11 @@ export interface Price {
 export const items: Item[] = [
   {
     itemId: 0,
-    name: 'Margherita',
+    name: 'Pepperoni',
   },
   {
     itemId: 1,
-    name: 'Pepperoni',
+    name: 'Margherita',
   },
 ];
 

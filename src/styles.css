@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-:root {
+@import "~bootstrap/dist/css/bootstrap.min.css";
+:app-root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -9,6 +10,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+app-root {
+  min-width: 380px;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -28,4 +35,33 @@ body {
   margin: 0;
   min-width: 120px;
   min-height: 100vh;
+}
+
+.accordion {
+  --bs-accordion-border-color: #ffffff;
+}
+
+.accordion-item {
+  min-width: 200px;
+  width: 700px;
+}
+
+.collapsed {
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 2px 1px rgba(78, 77, 77, 0.5);
+  border-radius: 4px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e3f0f8;
+  box-shadow: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.accordion-body {
+  background-color: #e3f0f8;
+  margin-bottom: 10px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
